@@ -14,4 +14,4 @@ def new_password():
     return render_template('homepage.html', password=new_password.content)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
