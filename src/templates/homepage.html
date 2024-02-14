@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+  </head>
+  <body>
+    <h1>Password Generator</h1>
+    <form action="new_password" method="post">
+      <input type="submit" value="GENERATE" id="new_password">
+      <br>
+      {{ password }}
+    </form>
+  </body>
+</html>
