@@ -17,7 +17,7 @@ def new_password():
     if 'has_special' in request.form:
         add_special = True
     if request.form['length'] != '':
-        add_length =int(request.form['length'])
+        add_length = int(request.form['length'])
     
     new_password = Password.Password(length=add_length, has_uppercase=add_uppercase, has_special=add_special)
     new_password.generate()
