@@ -3,11 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <title>Password Generator</title>
+    <!--
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+  -->
   </head>
   <body>
     <h1>Password Generator</h1>
-    <form action="new_password" method="post">
+    <form action="/new_password" method="post">
+      <label for="has_uppercase">Uppercase Letters</label>
+      <input type="checkbox", name="has_uppercase", id="has_uppercase">
+      <label for="has_special">Special Characters</label>
+      <input type="checkbox", name="has_special", id="has_special">
+      <br>
       <input type="submit" value="GENERATE" id="new_password">
       <br>
       {{ password }}
