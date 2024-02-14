@@ -11,11 +11,15 @@ def homepage():
 def new_password():
     add_uppercase = False
     add_special = False
+    add_length = 0
     if 'has_uppercase' in request.form:
         add_uppercase = True
     if 'has_special' in request.form:
         add_special = True
-    new_password = Password.Password(has_uppercase=add_uppercase, has_special=add_special)
+    if request.form['length'] != '':
+        add_length =int(request.form['length'])
+    
+    new_password = Password.Password(length=add_length, has_uppercase=add_uppercase, has_special=add_special)
     new_password.generate()
     return render_template('homepage.html', password=new_password.content)
 

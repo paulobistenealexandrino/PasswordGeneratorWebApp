@@ -10,6 +10,9 @@
   <body>
     <h1>Password Generator</h1>
     <form action="/new_password" method="post">
+      <label for="length">Lenght</label>
+      <input type="number", name="length", min="8", max="24" id="length">
+      <br>
       <label for="has_uppercase">Uppercase Letters</label>
       <input type="checkbox", name="has_uppercase", id="has_uppercase">
       <label for="has_special">Special Characters</label>
