@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Password Generator</title>
-    <!--
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
-  -->
   </head>
   <body>
     <h1>Password Generator</h1>
@@ -21,8 +19,13 @@
       <br>
       <input type="submit" value="GENERATE" id="new_password">
       <br>
-      <br>
-      {{ password }}
+      <p>{{ password }}</p>
     </form>
+    <footer>
+      2024 - Paulo Alexandrino
+      <br>
+      Made with ❤️ in Rio
+    </footer>
+    
   </body>
 </html>
