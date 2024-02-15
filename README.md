@@ -1,6 +1,6 @@
 # Password Generator Web App
 
-Esse projeto consiste em um simples web app de geração de uma senha aleatória utilizando o framework Flask do Python. Para acessar o aplicativo hospedado no Heroku, clique [aqui](https://passwordgenerator-app-1522c08c2489.herokuapp.com/)
+Esse projeto consiste em um simples web app de geração de uma senha aleatória utilizando o framework Flask do Python. Para acessar o aplicativo hospedado no Heroku, clique [aqui](https://passwordgenerator-app-1522c08c2489.herokuapp.com/).
 
 Referências:
 
